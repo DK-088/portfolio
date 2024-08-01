@@ -1,0 +1,70 @@
+[
+    
+    {
+        "name": "PHP",
+        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    },
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "Numpy",
+        "icon": "https://img.icons8.com/?size=50&id=aR9CXyMagKIS&format=png&color=000000.png"
+    },
+    {
+        "name": "Pandas",
+        "icon": "https://img.icons8.com/?size=50&id=xSkewUSqtErH&format=png&color=000000.png"
+    },
+    {
+        "name": "Tableau",
+        "icon": "https://img.icons8.com/?size=50&id=9Kvi1p1F0tUo&format=png&color=000000.png"
+    },
+    {
+        "name": "Excel",
+        "icon": "https://img.icons8.com/?size=50&id=117561&format=png&color=000000.png"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    },
+    {
+        "name": "Photoshop",
+        "icon": "https://img.icons8.com/?size=50&id=13677&format=png&color=000000.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "VS Code",
+        "icon": "https://img.icons8.com/?size=50&id=0OQR1FYCuA9f&format=png&color=000000.png"
+    },
+    {
+        "name": "phpMyAdmin",
+        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    }
+    
+  
+     
+]
