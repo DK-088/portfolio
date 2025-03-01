@@ -1,1 +1,1 @@
-DK-088.github.io/portfolio
+https://dk-088.github.io/portfolio/
