@@ -63,7 +63,12 @@
     {
         "name": "phpMyAdmin",
         "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    },
+    {
+        "name": "SpringBoot",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Spring_Boot.svg/640px-Spring_Boot.svg.png"
     }
+    
     
   
      
