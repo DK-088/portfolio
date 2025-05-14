@@ -1223,3 +1223,11 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+.margintop{
+  margin-top: 60px;
+}
+
+.marginbottom{
+  margin-bottom: 60px;
+}
