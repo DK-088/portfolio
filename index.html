@@ -265,6 +265,7 @@
 
     <!-- contact section starts -->
     <!-- contact section starts -->
+<!-- contact section starts -->
 <section class="contact" id="contact">
     <h2 class="heading margintop"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
 
@@ -273,7 +274,7 @@
             <div class="image-box">
                 <img draggable="false" src="./assets/images/contact1.png" alt="Contact Image">
             </div>
-            <form id="contact-form" onsubmit="sendToWhatsApp(); return false;">
+            <form id="contact-form" onsubmit="sendToEmail(); return false;">
 
                 <div class="form-group">
                     <div class="field">
@@ -295,7 +296,7 @@
                 </div>
                 <div class="button-area">
                     <button type="submit">
-                        Send via WhatsApp <i class="fab fa-whatsapp"></i>
+                        Send via Email <i class="fas fa-envelope"></i>
                     </button>
                 </div>
             </form>
@@ -304,29 +305,29 @@
 </section>
 <!-- contact section ends -->
 
-<!-- WhatsApp JavaScript -->
+<!-- Email JavaScript -->
 <script>
-  function sendToWhatsApp() {
+  function sendToEmail() {
     // Get form values
     var name = document.querySelector("input[name='name']").value;
     var email = document.querySelector("input[name='email']").value;
     var phone = document.querySelector("input[name='phone']").value;
     var message = document.querySelector("textarea[name='message']").value;
 
-    // Your WhatsApp number (without + or spaces)
-    var phoneNumber = "919751523553"; // 91 is the country code for India
+    // Recipient email address
+    var recipientEmail = "deepakkjc088@gmail.com"; // Replace with your email
 
-    // Create the WhatsApp message text
-    var text = `Hello Deepak,%0A%0AMy name is *${name}*.%0AEmail: ${email}%0APhone: ${phone}%0A%0A*Message:* ${message}`;
+    // Create the email subject and body
+    var subject = `Contact Form Submission from ${name}`;
+    var body = `Hello,%0A%0AYou have received a message from the contact form.%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0A*Message:* ${message}`;
 
-    // Create the WhatsApp URL
-    var url = `https://wa.me/${phoneNumber}?text=${text}`;
+    // Create the mailto link
+    var mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
 
-    // Open WhatsApp in a new tab
-    window.open(url, '_blank');
+    // Open the default email client
+    window.location.href = mailtoLink;
   }
 </script>
-
 
     <!-- contact section ends -->
 
