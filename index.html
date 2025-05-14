@@ -264,44 +264,70 @@
 
 
     <!-- contact section starts -->
-    <section class="contact" id="contact">
-        
-        <h2 class="heading margintop"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    <!-- contact section starts -->
+<section class="contact" id="contact">
+    <h2 class="heading margintop"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
 
-        <div class="container marginbottom">
-            <div class="content">
-                <div class="image-box">
-                    <img draggable="false" src="./assets/images/contact1.png" alt="">
-                </div>
-                <form id="contact-form">
-
-                    <div class="form-group">
-                        <div class="field">
-                            <input type="text" name="name" placeholder="Name" required>
-                            <i class='fas fa-user'></i>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="email" placeholder="Email" required>
-                            <i class='fas fa-envelope'></i>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="phone" placeholder="Phone">
-                            <i class='fas fa-phone-alt'></i>
-                        </div>
-                        <div class="message">
-                            <textarea placeholder="Message" name="message" required></textarea>
-                            <i class="fas fa-comment-dots"></i>
-                        </div>
-                    </div>
-                    <div class="button-area">
-                        <button type="submit">
-                            Submit <i class="fa fa-paper-plane"></i></button>
-                    </div>
-                </form>
+    <div class="container marginbottom">
+        <div class="content">
+            <div class="image-box">
+                <img draggable="false" src="./assets/images/contact1.png" alt="Contact Image">
             </div>
+            <form id="contact-form" onsubmit="sendToWhatsApp(); return false;">
+
+                <div class="form-group">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <i class='fas fa-user'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Email" required>
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <i class='fas fa-phone-alt'></i>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button type="submit">
+                        Send via WhatsApp <i class="fab fa-whatsapp"></i>
+                    </button>
+                </div>
+            </form>
         </div>
-        
-    </section>
+    </div>
+</section>
+<!-- contact section ends -->
+
+<!-- WhatsApp JavaScript -->
+<script>
+  function sendToWhatsApp() {
+    // Get form values
+    var name = document.querySelector("input[name='name']").value;
+    var email = document.querySelector("input[name='email']").value;
+    var phone = document.querySelector("input[name='phone']").value;
+    var message = document.querySelector("textarea[name='message']").value;
+
+    // Your WhatsApp number (without + or spaces)
+    var phoneNumber = "919751523553"; // 91 is the country code for India
+
+    // Create the WhatsApp message text
+    var text = `Hello Deepak,%0A%0AMy name is *${name}*.%0AEmail: ${email}%0APhone: ${phone}%0A%0A*Message:* ${message}`;
+
+    // Create the WhatsApp URL
+    var url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+    // Open WhatsApp in a new tab
+    window.open(url, '_blank');
+  }
+</script>
+
+
     <!-- contact section ends -->
 
 
