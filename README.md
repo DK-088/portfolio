@@ -1,73 +1,49 @@
-<h1 align="center">✨ Deepak K – Portfolio Website ✨</h1>
+# Deepak K - Developer Portfolio
 
-<p align="center">
-  <a href="https://dk-088.github.io/portfolio/" target="_blank">
-    🔗 View Live Portfolio
-  </a>
-</p>
+View Live Portfolio: [https://dk-088.github.io/portfolio/](https://dk-088.github.io/portfolio/)
 
-<p align="center">
-  👨‍💻 Data Science Enthusiast • 💻 Full Stack Developer • 🎓 Lifelong Learner
-</p>
+Software Engineer specializing in designing and developing web applications using React.js, JavaScript, TypeScript, Python, MySQL, and ERPNext. Currently pursuing a Master of Computer Applications (MCA) at the University of Madras.
 
 ---
 
-## 🧭 Overview
+## Technical Skills
 
-Welcome to the **source code of my personal portfolio website**, built to showcase my journey in tech, projects, skills, certifications, and real-world experiences.
-
-🚀 **Live Website**: [dk-088.github.io/portfolio](https://dk-088.github.io/portfolio/)  
-📅 **Built With**: HTML, CSS, JavaScript, Bootstrap  
-🗂️ **Hosted On**: GitHub Pages
-
----
-
-## 🔍 Features
-
-- 🎯 Clean, responsive design
-- 📂 Project highlights with visuals
-- 🧪 Skills section with interactive visuals
-- 📜 Certifications and conference work
-- 🧭 Easy navigation & mobile-friendly UI
+- **Frontend Development:** React.js, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Bootstrap, Material UI, Angular
+- **Backend & ERP:** Python, ERPNext, Frappe Framework, Java, Spring Boot, Node.js, PHP, RESTful APIs
+- **Databases & Cloud:** MySQL, PostgreSQL, SQLite, MongoDB, Redis, Docker
+- **Data Science & Tools:** OpenCV, NumPy, Pandas, MATLAB, Git, GitHub, Linux, VS Code
 
 ---
 
-## 💼 Featured Projects
+## Featured Projects
 
-| Project | Description | Tech Stack |
-|--------|-------------|------------|
-| **Sign Language Recognition System** | Real-time hand gesture interpreter using OpenCV and Mediapipe | `Python`, `OpenCV`, `Mediapipe`, `Scikit-learn` |
-| **TrainVerse – E-learning Platform** | Angular + Spring Boot-based portal for online course management | `Angular`, `Spring Boot`, `MySQL`, `JWT` |
-| **Responsive Web Templates** | Custom-built static & dynamic websites for clients | `HTML`, `CSS`, `PHP`, `MySQL`, `JavaScript` |
-
----
-
-## 🛠️ Tech Stack
-
-**Frontend**  
-`HTML` `CSS` `JavaScript` `Bootstrap` `Angular`
-
-**Backend**  
-`Java` `Spring Boot` `PHP` `REST API`
-
-**Database**  
-`MySQL` `MongoDB`
-
-**Tools**  
-`VS Code` `Git & GitHub` `Postman` `Figma` `Jupyter Notebook` `Power BI` `Tableau`
+| Project | Description | Tech Stack | Links |
+| :--- | :--- | :--- | :--- |
+| **GhostPay-X402** | AI-powered zero-data vault & offline payments on Algorand Testnet with x402 protocol, QR Scan & Pay, and real-time transaction protection. | React.js, Algorand, AI + x402, Tailwind CSS | [Live Demo](https://ghost-pay-psi.vercel.app/) \| [Code](https://github.com/DK-088/GhostPay-X402.git) |
+| **ERPNext Customization** | Custom CRM modules, reports, dashboards, and workflow automation for streamlined business operations. | Python, ERPNext, Frappe, MySQL, JS | [Code](https://github.com/DK-088?tab=repositories) |
+| **Trainverse - E-Learning Platform** | Secure role-based learning platform featuring JWT authentication, course management, and admin dashboards. | AngularJS, Spring Boot, MySQL, JWT | [View](assets/images/TrainVerse.pptx) \| [Code](https://github.com/DK-088?tab=repositories) |
+| **Sign-Language Recognition System** | Real-time sign language interpreter achieving 90% accuracy using computer vision algorithms. | Python, OpenCV, Scikit-Learn, Mediapipe | [View](assets/images/REAL-TIME%20SIGN%20LANGUAGE%20DETECTION.pptx) \| [Code](https://github.com/DK-088?tab=repositories) |
 
 ---
 
-## 📫 Connect With Me
+## Education
 
-<p>
-  📧 Email: <a href="mailto:deepakkjc088@gmail.com">deepakkjc088@gmail.com</a> <br>
-  💼 LinkedIn: <a href="https://www.linkedin.com/in/dk088/">linkedin.com/in/dk088</a> <br>
-  💻 GitHub: <a href="https://github.com/DK-088">github.com/DK-088</a> <br>
-  🌐 Portfolio: <a href="https://dk-088.github.io/portfolio/">dk-088.github.io/portfolio</a>
-</p>
+- **Master of Computer Applications (MCA)** - University of Madras, Chennai (Pursuing)
+- **B.Sc. Computer Science with Data Science** - St. Thomas College of Arts and Science, Chennai (2022 - 2025)
+- **HSC (Computer Science)** - Lakshmi Matriculation Higher Secondary School, Chennai (2021 - 2022)
 
 ---
 
-> 🔔 If you like this project or found it helpful, feel free to ⭐ the repository or reach out for collaboration!
+## Contact Information
 
+- **Email:** [deepakkjc088@gmail.com](mailto:deepakkjc088@gmail.com)
+- **LinkedIn:** [https://www.linkedin.com/in/dk088/](https://www.linkedin.com/in/dk088/)
+- **GitHub:** [https://github.com/DK-088](https://github.com/DK-088)
+- **WhatsApp:** +91 9751523553
+- **Location:** Chennai, Tamil Nadu, India
+
+---
+
+## License & Usage
+
+This repository contains the source code for Deepak K's personal portfolio. Feel free to explore the project structure or reach out for professional opportunities and collaborations.
