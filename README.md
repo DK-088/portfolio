@@ -19,10 +19,10 @@ Software Engineer specializing in designing and developing web applications usin
 
 | Project | Description | Tech Stack | Links |
 | :--- | :--- | :--- | :--- |
-| **GhostPay-X402** | AI-powered zero-data vault & offline payments on Algorand Testnet with x402 protocol, QR Scan & Pay, and real-time transaction protection. | React.js, Algorand, AI + x402, Tailwind CSS | [Live Demo](https://ghost-pay-psi.vercel.app/) / [Code](https://github.com/DK-088/GhostPay-X402.git) |
+| **GhostPay-X402** | AI-powered zero-data vault & offline payments on Algorand Testnet with x402 protocol, QR Scan & Pay, and real-time transaction protection. | React.js, Algorand, AI + x402, Tailwind CSS | [Live Demo](https://ghost-pay-psi.vercel.app/)  <br> [Code](https://github.com/DK-088/GhostPay-X402.git) |
 | **ERPNext Customization** | Custom CRM modules, reports, dashboards, and workflow automation for streamlined business operations. | Python, ERPNext, Frappe, MySQL, JS | [Code](https://github.com/DK-088?tab=repositories) |
-| **Trainverse - E-Learning Platform** | Secure role-based learning platform featuring JWT authentication, course management, and admin dashboards. | AngularJS, Spring Boot, MySQL, JWT | [View](assets/images/TrainVerse.pptx) / [Code](https://github.com/DK-088?tab=repositories) |
-| **Sign-Language Recognition System** | Real-time sign language interpreter achieving 90% accuracy using computer vision algorithms. | Python, OpenCV, Scikit-Learn, Mediapipe | [View](assets/images/REAL-TIME%20SIGN%20LANGUAGE%20DETECTION.pptx) / [Code](https://github.com/DK-088?tab=repositories) |
+| **Trainverse - E-Learning Platform** | Secure role-based learning platform featuring JWT authentication, course management, and admin dashboards. | AngularJS, Spring Boot, MySQL, JWT | [Code](https://github.com/DK-088?tab=repositories) |
+| **Sign-Language Recognition System** | Real-time sign language interpreter achieving 90% accuracy using computer vision algorithms. | Python, OpenCV, Scikit-Learn, Mediapipe | [Code](https://github.com/DK-088?tab=repositories) |
 
 ---
 
