@@ -34,8 +34,8 @@
   transform: translate3d(0, 0, 0.1px);
   position: relative;
   touch-action: none;
-  width: 280px;
-  max-width: 280px;
+  width: 250px;
+  max-width: 250px;
   margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .pc-card {
-  height: 380px;
+  height: 250px;
   width: 100%;
   border-radius: var(--card-radius);
   position: relative;
@@ -153,12 +153,14 @@
   object-fit: contain;
   object-position: center bottom;
   position: absolute;
-  inset: 0;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%) scale(1.35);
+  transform-origin: center bottom;
   border-radius: var(--card-radius);
   mix-blend-mode: normal;
-  filter: brightness(1) contrast(1.05);
+  filter: brightness(0.98) contrast(1.04);
   transition: transform 150ms ease-out;
-  padding: 3.2rem 0.2rem 0.2rem 0.2rem;
 }
 
 .pc-avatar-content::before {

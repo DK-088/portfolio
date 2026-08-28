@@ -1,99 +1,86 @@
 [
   {
-    "name": "PHP",
-    "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
-  },
-  {
-    "name": "HTML5",
-    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
-  },
-  {
-    "name": "CSS3",
-    "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    "name": "React.js",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
   },
   {
     "name": "JavaScript",
-    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
   },
   {
-    "name": "MongoDB",
-    "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    "name": "Node.js",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
   },
   {
-    "name": "MySQL",
-    "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    "name": "TypeScript",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
   },
   {
     "name": "Python",
-    "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
   },
   {
-    "name": "Numpy",
-    "icon": "https://img.icons8.com/?size=50&id=aR9CXyMagKIS&format=png&color=000000.png"
+    "name": "OpenCV",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
   },
   {
-    "name": "Pandas",
-    "icon": "https://img.icons8.com/?size=50&id=xSkewUSqtErH&format=png&color=000000.png"
-  },
-  {
-    "name": "Tableau",
-    "icon": "https://img.icons8.com/?size=50&id=9Kvi1p1F0tUo&format=png&color=000000.png"
-  },
-  {
-    "name": "Excel",
-    "icon": "https://img.icons8.com/?size=50&id=117561&format=png&color=000000.png"
+    "name": "MATLAB",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg"
   },
   {
     "name": "Java",
-    "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
   },
   {
-    "name": "Photoshop",
-    "icon": "https://img.icons8.com/?size=50&id=13677&format=png&color=000000.png"
+    "name": "Spring Boot",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
   },
   {
-    "name": "GitHub",
-    "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    "name": "PHP",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
   },
   {
-    "name": "VS Code",
-    "icon": "https://img.icons8.com/?size=50&id=0OQR1FYCuA9f&format=png&color=000000.png"
+    "name": "HTML5",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
   },
   {
-    "name": "phpMyAdmin",
-    "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    "name": "CSS3",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   },
   {
-    "name": "SpringBoot",
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Spring_Boot.svg/48px-Spring_Boot.svg.png"
+    "name": "Material UI",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
   },
   {
-    "name": "Angular",
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/48px-Angular_full_color_logo.svg.png"
+    "name": "Tailwind CSS",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
   },
   {
-    "name": "Bootstrap",
-    "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+    "name": "MySQL",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+  },
+  {
+    "name": "SQLite",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    "name": "Redis",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+  },
+  {
+    "name": "Docker",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
   },
   {
     "name": "Git",
-    "icon": "https://img.icons8.com/color/48/000000/git.png"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
   },
   {
-    "name": "Hibernate",
-    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNNS4zNjUgMEw5Ljk4IDcuOTk0aDguOTVMMTQuMzEgMHptLS40MzEuMjQ4TC40NiA3Ljk5NGw0LjYxMyA4LjAwOEw5LjU1IDguMjR6bTEzLjk5MiA3Ljc1bC00LjQ3NSA3Ljc2bDQuNjE3IDcuOTkybDQuNDcxLTcuNzQ0em0tNC45MDUgOC4wMDZsLTguOTUuMDAyTDkuNjg4IDI0aDguOTQ2bC00LjYxNS03Ljk5NGwuMDAxLS4wMDJaIi8+PC9zdmc+"
-  },
-  {
-    "name": "Matplotlib",
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Matplotlib_icon.svg/48px-Matplotlib_icon.svg.png"
-  },
-  {
-    "name": "Power BI",
-    "icon": "https://img.icons8.com/color/48/000000/power-bi.png"
-  },
-  {
-    "name": "SQL",
-    "icon": "https://img.icons8.com/external-soft-fill-juicy-fish/48/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png"
+    "name": "Linux",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
   }
-
 ]
