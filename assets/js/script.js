@@ -202,7 +202,7 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 // window.onload = fadeOut;
 // pre loader end
 
-/* ===== DISABLE DEVELOPER MODE (Uncomment after development) =====
+// Disable developer mode shortcut keys (F12, Ctrl+Shift+I/C/J, Ctrl+U) and right-click
 document.onkeydown = function (e) {
     if (e.keyCode == 123) { // F12
         return false;
@@ -220,7 +220,10 @@ document.onkeydown = function (e) {
         return false;
     }
 }
-=============================================================== */
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
 
 // Start of Tawk.to Live Chat
 
