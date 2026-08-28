@@ -246,3 +246,107 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+// ===== Profile Card Tilt & Motion Engine (React Bits Port) =====
+function initProfileCards() {
+    const clamp = (v, min = 0, max = 100) => Math.min(Math.max(v, min), max);
+    const round = (v, precision = 3) => parseFloat(v.toFixed(precision));
+    const adjust = (v, fMin, fMax, tMin, tMax) => round(tMin + ((tMax - tMin) * (v - fMin)) / (fMax - fMin));
+
+    document.querySelectorAll('.pc-card-wrapper').forEach(wrap => {
+        const shell = wrap.querySelector('.pc-card-shell');
+        if (!shell) return;
+
+        let rafId = null;
+        let running = false;
+        let lastTs = 0;
+        let currentX = 0, currentY = 0;
+        let targetX = 0, targetY = 0;
+        const DEFAULT_TAU = 0.14;
+
+        function setVarsFromXY(x, y) {
+            const width = shell.clientWidth || 1;
+            const height = shell.clientHeight || 1;
+            const percentX = clamp((100 / width) * x);
+            const percentY = clamp((100 / height) * y);
+            const centerX = percentX - 50;
+            const centerY = percentY - 50;
+
+            const properties = {
+                '--pointer-x': `${percentX}%`,
+                '--pointer-y': `${percentY}%`,
+                '--background-x': `${adjust(percentX, 0, 100, 35, 65)}%`,
+                '--background-y': `${adjust(percentY, 0, 100, 35, 65)}%`,
+                '--pointer-from-center': `${clamp(Math.hypot(percentY - 50, percentX - 50) / 50, 0, 1)}`,
+                '--pointer-from-top': `${percentY / 100}`,
+                '--pointer-from-left': `${percentX / 100}`,
+                '--rotate-x': `${round(-(centerX / 5))}deg`,
+                '--rotate-y': `${round(centerY / 4)}deg`
+            };
+
+            for (const [k, v] of Object.entries(properties)) {
+                wrap.style.setProperty(k, v);
+            }
+        }
+
+        function step(ts) {
+            if (!running) return;
+            if (lastTs === 0) lastTs = ts;
+            const dt = (ts - lastTs) / 1000;
+            lastTs = ts;
+
+            const k = 1 - Math.exp(-dt / DEFAULT_TAU);
+            currentX += (targetX - currentX) * k;
+            currentY += (targetY - currentY) * k;
+
+            setVarsFromXY(currentX, currentY);
+
+            const stillFar = Math.abs(targetX - currentX) > 0.05 || Math.abs(targetY - currentY) > 0.05;
+            if (stillFar || document.hasFocus()) {
+                rafId = requestAnimationFrame(step);
+            } else {
+                running = false;
+                lastTs = 0;
+            }
+        }
+
+        function setTarget(x, y) {
+            targetX = x;
+            targetY = y;
+            if (!running) {
+                running = true;
+                lastTs = 0;
+                rafId = requestAnimationFrame(step);
+            }
+        }
+
+        function getOffsets(evt, el) {
+            const rect = el.getBoundingClientRect();
+            return { x: evt.clientX - rect.left, y: evt.clientY - rect.top };
+        }
+
+        shell.addEventListener('pointerenter', (e) => {
+            shell.classList.add('active');
+            wrap.classList.add('active');
+            const { x, y } = getOffsets(e, shell);
+            setTarget(x, y);
+        });
+
+        shell.addEventListener('pointermove', (e) => {
+            const { x, y } = getOffsets(e, shell);
+            setTarget(x, y);
+        });
+
+        shell.addEventListener('pointerleave', () => {
+            const width = shell.clientWidth || 1;
+            const height = shell.clientHeight || 1;
+            setTarget(width / 2, height / 2);
+            shell.classList.remove('active');
+            wrap.classList.remove('active');
+        });
+    });
+}
+document.addEventListener('DOMContentLoaded', initProfileCards);
+$(document).ready(function() {
+    initProfileCards();
+});
