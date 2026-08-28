@@ -86,7 +86,7 @@
                 <div class="pc-card-wrapper">
                     <div class="pc-behind"></div>
                     <div class="pc-card-shell">
-                        <section class="pc-card">
+                        <div class="pc-card">
                             <div class="pc-inside">
                                 <div class="pc-shine"></div>
                                 <div class="pc-glare"></div>
@@ -100,7 +100,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -337,7 +337,11 @@
             <div class="image-box">
                 <img draggable="false" src="./assets/images/contact1.png" alt="Contact Image">
             </div>
-            <form id="contact-form" onsubmit="sendToEmail(); return false;">
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="onIframeLoad()"></iframe>
+            <form id="contact-form" action="https://formsubmit.co/deepakkjc088@gmail.com" method="POST" target="hidden_iframe" onsubmit="onFormSubmit(event)">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Portfolio Contact Message">
 
                 <div class="form-group">
                     <div class="field">
@@ -345,7 +349,7 @@
                         <i class='fas fa-user'></i>
                     </div>
                     <div class="field">
-                        <input type="text" name="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                         <i class='fas fa-envelope'></i>
                     </div>
                     <div class="field">
@@ -368,27 +372,48 @@
 </section>
 <!-- contact section ends -->
 
-<!-- Email JavaScript -->
+<!-- Custom Stylish Light Mode Alert Modal -->
+<div id="custom-alert" class="custom-alert-modal">
+  <div class="custom-alert-content">
+    <div class="alert-icon">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <h3 id="alert-title">Message Sent!</h3>
+    <p id="alert-message">Thank you for getting in touch. Your message has been sent successfully to Deepak.</p>
+    <button onclick="closeCustomAlert()" class="alert-btn">Got It!</button>
+  </div>
+</div>
+
 <script>
-  function sendToEmail() {
-    // Get form values
-    var name = document.querySelector("input[name='name']").value;
-    var email = document.querySelector("input[name='email']").value;
-    var phone = document.querySelector("input[name='phone']").value;
-    var message = document.querySelector("textarea[name='message']").value;
+  var formSubmitted = false;
 
-    // Recipient email address
-    var recipientEmail = "deepakkjc088@gmail.com"; // Replace with your email
+  function showCustomAlert(title, message) {
+    document.getElementById("alert-title").innerText = title;
+    document.getElementById("alert-message").innerText = message;
+    document.getElementById("custom-alert").classList.add("show");
+  }
 
-    // Create the email subject and body
-    var subject = `Contact Form Submission from ${name}`;
-    var body = `Hello,%0A%0AYou have received a message from the contact form.%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0A*Message:* ${message}`;
+  function closeCustomAlert() {
+    document.getElementById("custom-alert").classList.remove("show");
+  }
 
-    // Create the mailto link
-    var mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+  function onFormSubmit(event) {
+    var btn = document.querySelector("#contact-form button[type='submit']");
+    btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+    btn.disabled = true;
+    formSubmitted = true;
+  }
 
-    // Open the default email client
-    window.location.href = mailtoLink;
+  function onIframeLoad() {
+    if (!formSubmitted) return;
+    var nameInput = document.querySelector("input[name='name']");
+    var senderName = nameInput && nameInput.value ? nameInput.value : "";
+    showCustomAlert("Message Sent!", `Thank you ${senderName}! Your message has been sent successfully to Deepak.`);
+    document.getElementById("contact-form").reset();
+    var btn = document.querySelector("#contact-form button[type='submit']");
+    btn.innerHTML = 'Send via Email <i class="fas fa-envelope"></i>';
+    btn.disabled = false;
+    formSubmitted = false;
   }
 </script>
 
@@ -404,7 +429,7 @@
                 <h3>Deepak's Portfolio</h3>
                 <p>Thank you for visiting my personal portfolio website. Connect with me over socials.
                     <br/>
-                    <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+                    <br/> Keep Rising. Connect with me over live chat!</p>
             </div>
 
             <div class="box">

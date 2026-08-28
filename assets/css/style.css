@@ -1480,6 +1480,86 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 
+/* Custom Stylish Light Mode Alert Modal */
+.custom-alert-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.custom-alert-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.custom-alert-content {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 3.5rem 3rem;
+  border-radius: 1.8rem;
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  transform: scale(0.85);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.custom-alert-modal.show .custom-alert-content {
+  transform: scale(1);
+}
+
+.custom-alert-content .alert-icon {
+  font-size: 5rem;
+  color: #10b981;
+  margin-bottom: 1.5rem;
+}
+
+.custom-alert-content h3 {
+  font-size: 2.4rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.custom-alert-content p {
+  font-size: 1.5rem;
+  color: #475569;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-alert-content .alert-btn {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: #ffffff;
+  border: none;
+  padding: 1.2rem 3.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+.custom-alert-content .alert-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+}
+
 /* scroll top ends */
 
 .margintop {
