@@ -11,8 +11,10 @@ $(document).ready(function () {
 
         if (window.scrollY > 60) {
             document.querySelector('#scroll-top').classList.add('active');
+            document.querySelector('header').classList.add('scrolled');
         } else {
             document.querySelector('#scroll-top').classList.remove('active');
+            document.querySelector('header').classList.remove('scrolled');
         }
 
         // scroll spy
@@ -171,24 +173,25 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 // window.onload = fadeOut;
 // pre loader end
 
-// disable developer mode
+/* ===== DISABLE DEVELOPER MODE (Uncomment after development) =====
 document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
+    if (e.keyCode == 123) { // F12
         return false;
     }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
         return false;
     }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Ctrl+Shift+C
         return false;
     }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
         return false;
     }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U (View Source)
         return false;
     }
 }
+=============================================================== */
 
 // Start of Tawk.to Live Chat
 

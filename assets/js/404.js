@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
 });
 
-// disable developer mode
+/* ===== DISABLE DEVELOPER MODE (Uncomment after development) =====
 document.onkeydown = function(e) {
   if(e.keyCode == 123) {
      return false;
@@ -24,3 +24,4 @@ document.onkeydown = function(e) {
      return false;
   }
 }
+=============================================================== */

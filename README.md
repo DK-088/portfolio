@@ -62,7 +62,7 @@ Welcome to the **source code of my personal portfolio website**, built to showca
 
 <p>
   📧 Email: <a href="mailto:deepakkjc088@gmail.com">deepakkjc088@gmail.com</a> <br>
-  💼 LinkedIn: <a href="https://linkedin.com/in/dk088">linkedin.com/in/dk088</a> <br>
+  💼 LinkedIn: <a href="https://www.linkedin.com/in/dk088/">linkedin.com/in/dk088</a> <br>
   💻 GitHub: <a href="https://github.com/DK-088">github.com/DK-088</a> <br>
   🌐 Portfolio: <a href="https://dk-088.github.io/portfolio/">dk-088.github.io/portfolio</a>
 </p>
