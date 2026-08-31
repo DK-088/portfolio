@@ -70,7 +70,8 @@
             </div>
         </div>
         <div class="image">
-            <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+            <video id="hero-video" src="assets/video/hero-video.mp4" playsinline autoplay loop muted preload="auto" style="display:none;"></video>
+            <canvas id="hero-canvas" class="hero-chroma-canvas"></canvas>
         </div>
     </section>
     <!-- hero section ends -->
@@ -486,6 +487,7 @@
 
     <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
+    <script src="./assets/js/hero-video.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </body>
